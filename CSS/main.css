@@ -226,4 +226,68 @@ header .container nav form i {
     line-height: 1.5;
 }
 
+
+@media (max-width: 767px) {
+    .landing .intro {
+        width: 100%;
+    }
+
+    .landing .intro .content {
+        width: 100%;
+    }
+
+    .landing .intro .content h2 {
+        font: 20px;
+        line-height: 1.3;
+    }
+
+    .landing .intro .content p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+}
+
+
+.landing .background-changer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+}
+
+@media (max-width: 767px) {
+    .landing .background-changer {
+        display: none;
+    }
+}
+
+.landing .background-changer:first-of-type {
+    left: 30px;
+}
+
+.landing .background-changer:last-of-type {
+    right: 30px;
+}
+
+.landing .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+} 
+
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    margin-right: 10px;
+} 
+
+.landing .bullets li.active {
+    background-color: var(--main-color);
+}
+
+
 /* End Landing */
